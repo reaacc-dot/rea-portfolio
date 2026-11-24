@@ -1,0 +1,1126 @@
+
+@extends('layouts.app')
+
+@section('content')
+
+{{-- HERO --}}
+<section id="experienceHero" class="bg-[#FAF9F6] px-6 py-12 text-[#20263A] lg:px-8 lg:py-16">
+
+    <div class="mx-auto max-w-7xl">
+
+        <div class="flex items-center gap-3">
+            <span class="h-px w-8 bg-[#8C3040]"></span>
+            <p class="text-[10px] font-medium uppercase tracking-[0.28em] text-[#20263A]/45">
+                Works / Experiences
+            </p>
+        </div>
+
+        <div class="mt-6 grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+
+            <h1 class="text-[12vw] font-semibold leading-[0.88] tracking-[-0.075em] text-[#20263A] sm:text-7xl lg:text-[6rem]">
+                Selected
+                <span class="font-serif italic text-[#8C3040]">
+                    Experiences.
+                </span>
+            </h1>
+
+            <p class="max-w-sm text-sm leading-7 text-[#20263A]/60 lg:justify-self-end lg:pb-1">
+                Experiences, collaborations, and meaningful contributions
+                shaped through professional work, community involvement,
+                and international engagement.
+            </p>
+
+        </div>
+
+        <div class="mt-9 flex items-center justify-between border-t border-[#20263A]/10 pt-3">
+
+            <p class="text-[10px] uppercase tracking-[0.23em] text-[#20263A]/40">
+                Beyond the classroom
+            </p>
+
+            <p class="text-xs text-[#3155D8]/70">
+                03 Selected Experiences
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{{-- EXPERIENCE LIST --}}
+<section id="experienceList" class="bg-[#F1F4FA] px-6 py-12 text-[#20263A] lg:px-8 lg:py-20">
+
+    <div class="mx-auto max-w-7xl">
+
+        <div class="mb-9 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+
+            <div>
+                <p class="text-[10px] font-medium uppercase tracking-[0.28em] text-[#8C3040]">
+                    Experience Archive / 01
+                </p>
+
+                <h2 class="mt-3 text-2xl font-medium tracking-[-0.04em] sm:text-3xl">
+                    A collection of experiences
+                </h2>
+            </div>
+
+            <p class="max-w-sm text-xs leading-6 text-[#20263A]/50">
+                A closer look at the roles, activities, and collaborations
+                that have shaped my personal and professional journey.
+            </p>
+
+        </div>
+
+
+        {{-- FILTER --}}
+        <div class="mb-8 flex flex-wrap gap-2">
+
+            <button type="button" data-filter="all"
+                class="experience-filter rounded-full border border-[#3155D8] bg-[#3155D8] px-4 py-2 text-[10px] font-medium uppercase tracking-[0.14em] text-white transition-all duration-300">
+                All
+            </button>
+
+            <button type="button" data-filter="internship"
+                class="experience-filter rounded-full border border-[#20263A]/15 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.14em] text-[#20263A]/55 transition-all duration-300 hover:border-[#3155D8] hover:text-[#3155D8]">
+                Internship
+            </button>
+
+            <button type="button" data-filter="community"
+                class="experience-filter rounded-full border border-[#20263A]/15 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.14em] text-[#20263A]/55 transition-all duration-300 hover:border-[#3155D8] hover:text-[#3155D8]">
+                Community
+            </button>
+
+            <button type="button" data-filter="international"
+                class="experience-filter rounded-full border border-[#20263A]/15 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.14em] text-[#20263A]/55 transition-all duration-300 hover:border-[#3155D8] hover:text-[#3155D8]">
+                International
+            </button>
+<button type="button" data-filter="learning"
+    class="experience-filter rounded-full border border-[#20263A]/15 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.14em] text-[#20263A]/55 transition-all duration-300 hover:border-[#3155D8] hover:text-[#3155D8]">
+    Courses & Seminars
+</button>
+
+        </div>
+
+
+        {{-- EXPERIENCE 01 --}}
+        <article data-category="internship" class="experience-item border-t border-[#20263A]/15 py-8 lg:py-10">
+
+            <div class="grid gap-6 lg:grid-cols-[190px_1fr_150px] lg:items-center lg:gap-10">
+
+                <div class="aspect-[4/3] w-full overflow-hidden bg-[#E5E9F1]">
+                    <img
+                        src="{{ asset('images/bmnteam1.png') }}"
+                        alt="BMN Team internship documentation"
+                        class="h-full w-full object-cover transition duration-500 hover:scale-[1.04]"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div>
+
+                    <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+                        <span class="text-[9px] font-medium uppercase tracking-[0.2em] text-[#8C3040]">
+                            01 / Internship
+                        </span>
+                        <span class="h-3 w-px bg-[#20263A]/15"></span>
+                        <span class="text-[10px] uppercase tracking-[0.16em] text-[#20263A]/45">
+                            2024
+                        </span>
+                    </div>
+
+                    <h3 class="mt-3 max-w-3xl text-2xl font-medium leading-tight tracking-[-0.04em] text-[#20263A] sm:text-3xl">
+                        BMN Team Internship
+                    </h3>
+
+                    <p class="mt-2 text-xs font-medium text-[#3155D8]/80">
+                        Rectorate, University of Palangka Raya
+                    </p>
+
+                    <p class="mt-4 max-w-3xl text-sm leading-7 text-[#20263A]/60">
+                        Completed a one-semester internship assisting the BMN
+                        team with daily operations and developing an inventory
+                        application to streamline stock management and
+                        university item borrowing workflows.
+                    </p>
+
+                </div>
+
+                <div class="lg:justify-self-end">
+                    <button type="button" data-open-detail="bmn"
+                        class="group inline-flex items-center gap-3 border-b border-[#3155D8]/30 pb-2 text-[10px] font-medium uppercase tracking-[0.16em] text-[#3155D8] transition-all duration-300 hover:gap-5 hover:border-[#8C3040] hover:text-[#8C3040]">
+                        Explore Experience
+                        <span class="text-sm">↗</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        {{-- EXPERIENCE 02 --}}
+        <article data-category="community" class="experience-item border-t border-[#20263A]/15 py-8 lg:py-10">
+
+            <div class="grid gap-6 lg:grid-cols-[190px_1fr_150px] lg:items-center lg:gap-10">
+
+                <div class="aspect-[4/3] w-full overflow-hidden bg-[#E5E9F1]">
+                    <img
+                        src="{{ asset('images/kkn1.png') }}"
+                        alt="Community service program in Tewah Pupuh Village"
+                        class="h-full w-full object-cover transition duration-500 hover:scale-[1.04]"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div>
+
+                    <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+                        <span class="text-[9px] font-medium uppercase tracking-[0.2em] text-[#8C3040]">
+                            02 / Community Service
+                        </span>
+                        <span class="h-3 w-px bg-[#20263A]/15"></span>
+                        <span class="text-[10px] uppercase tracking-[0.16em] text-[#20263A]/45">
+                            2023
+                        </span>
+                    </div>
+
+                    <h3 class="mt-3 max-w-3xl text-2xl font-medium leading-tight tracking-[-0.04em] text-[#20263A] sm:text-3xl">
+                        Community Service Program (KKN)
+                    </h3>
+
+                    <p class="mt-2 text-xs font-medium text-[#3155D8]/80">
+                        Tewah Pupuh Village, Central Kalimantan, Indonesia
+                    </p>
+
+                    <p class="mt-4 max-w-3xl text-sm leading-7 text-[#20263A]/60">
+                        A two-month community engagement program involving
+                        educational activities, village development initiatives,
+                        administrative support, and collaboration with local
+                        residents and agricultural communities.
+                    </p>
+
+                </div>
+
+                <div class="lg:justify-self-end">
+                    <button type="button" data-open-detail="kkn"
+                        class="group inline-flex items-center gap-3 border-b border-[#3155D8]/30 pb-2 text-[10px] font-medium uppercase tracking-[0.16em] text-[#3155D8] transition-all duration-300 hover:gap-5 hover:border-[#8C3040] hover:text-[#8C3040]">
+                        Explore Experience
+                        <span class="text-sm">↗</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        {{-- EXPERIENCE 03 --}}
+        <article data-category="international" class="experience-item border-y border-[#20263A]/15 py-8 lg:py-10">
+
+            <div class="grid gap-6 lg:grid-cols-[190px_1fr_150px] lg:items-center lg:gap-10">
+
+                <div class="aspect-[4/3] w-full overflow-hidden bg-[#E5E9F1]">
+                    <img
+                        src="{{ asset('images/volunteer1.png') }}"
+                        alt="International volunteer and interpreter program in South Korea"
+                        class="h-full w-full object-cover transition duration-500 hover:scale-[1.04]"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div>
+
+                    <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+                        <span class="text-[9px] font-medium uppercase tracking-[0.2em] text-[#8C3040]">
+                            03 / International Volunteering
+                        </span>
+                        <span class="h-3 w-px bg-[#20263A]/15"></span>
+                        <span class="text-[10px] uppercase tracking-[0.16em] text-[#20263A]/45">
+                            2026
+                        </span>
+                    </div>
+
+                    <h3 class="mt-3 max-w-3xl text-2xl font-medium leading-tight tracking-[-0.04em] text-[#20263A] sm:text-3xl">
+                        International Volunteer & Interpreter
+                    </h3>
+
+                    <p class="mt-2 text-xs font-medium text-[#3155D8]/80">
+                        Busan Team, South Korea
+                    </p>
+
+                    <p class="mt-4 max-w-3xl text-sm leading-7 text-[#20263A]/60">
+                        Participated in an international volunteering program,
+                        serving as an interpreter to support communication,
+                        coordination, and cultural exchange between the
+                        South Korean team and local participants.
+                    </p>
+
+                </div>
+
+                <div class="lg:justify-self-end">
+                    <button type="button" data-open-detail="volunteer"
+                        class="group inline-flex items-center gap-3 border-b border-[#3155D8]/30 pb-2 text-[10px] font-medium uppercase tracking-[0.16em] text-[#3155D8] transition-all duration-300 hover:gap-5 hover:border-[#8C3040] hover:text-[#8C3040]">
+                        Explore Experience
+                        <span class="text-sm">↗</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+{{-- EXPERIENCE 04 --}}
+<article data-category="learning" class="experience-item border-t border-[#20263A]/15 py-8 lg:py-10">
+
+    <div class="grid gap-6 lg:grid-cols-[190px_1fr_150px] lg:items-center lg:gap-10">
+
+        <div class="aspect-[4/3] w-full overflow-hidden bg-[#E5E9F1]">
+            <img
+                src="{{ asset('images/coursera1.png') }}"
+                alt="Korean Language Specialization coursework"
+                class="h-full w-full object-cover transition duration-500 hover:scale-[1.04]"
+                loading="lazy"
+            >
+        </div>
+
+        <div>
+
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+                <span class="text-[9px] font-medium uppercase tracking-[0.2em] text-[#8C3040]">
+                    04 / Online Specialization
+                </span>
+                <span class="h-3 w-px bg-[#20263A]/15"></span>
+                <span class="text-[10px] uppercase tracking-[0.16em] text-[#20263A]/45">
+                    2026
+                </span>
+            </div>
+
+            <h3 class="mt-3 max-w-3xl text-2xl font-medium leading-tight tracking-[-0.04em] text-[#20263A] sm:text-3xl">
+                Korean Language Specialization
+            </h3>
+
+            <p class="mt-2 text-xs font-medium text-[#3155D8]/80">
+                Yonsei University × Coursera
+            </p>
+
+            <p class="mt-4 max-w-3xl text-sm leading-7 text-[#20263A]/60">
+                Completed structured online coursework through First Step
+                Korean and Learn to Speak Korean 1, developing foundational
+                Korean language proficiency in Hangul literacy, grammar,
+                listening comprehension, and practical conversation.
+            </p>
+
+        </div>
+
+        <div class="lg:justify-self-end">
+            <button type="button" data-open-detail="korean"
+                class="group inline-flex items-center gap-3 border-b border-[#3155D8]/30 pb-2 text-[10px] font-medium uppercase tracking-[0.16em] text-[#3155D8] transition-all duration-300 hover:gap-5 hover:border-[#8C3040] hover:text-[#8C3040]">
+                Explore Experience
+                <span class="text-sm">↗</span>
+            </button>
+        </div>
+
+    </div>
+
+</article>
+
+{{-- EXPERIENCE 05 --}}
+<article data-category="learning" class="experience-item border-t border-[#20263A]/15 py-8 lg:py-10">
+
+    <div class="grid gap-6 lg:grid-cols-[190px_1fr_150px] lg:items-center lg:gap-10">
+
+        <div class="aspect-[4/3] w-full overflow-hidden bg-[#E5E9F1]">
+            <img
+                src="{{ asset('images/seminar.png') }}"
+                alt="Korea Path to Scholarship seminar certificate"
+                class="h-full w-full object-cover transition duration-500 hover:scale-[1.04]"
+                loading="lazy"
+            >
+        </div>
+
+        <div>
+
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+                <span class="text-[9px] font-medium uppercase tracking-[0.2em] text-[#8C3040]">
+                    05 / Academic Seminar
+                </span>
+                <span class="h-3 w-px bg-[#20263A]/15"></span>
+                <span class="text-[10px] uppercase tracking-[0.16em] text-[#20263A]/45">
+                    2026
+                </span>
+            </div>
+
+            <h3 class="mt-3 max-w-3xl text-2xl font-medium leading-tight tracking-[-0.04em] text-[#20263A] sm:text-3xl">
+                International Academic Preparation Seminar
+            </h3>
+
+            <p class="mt-2 text-xs font-medium text-[#3155D8]/80">
+                Korea Path to Scholarship (K-PASS) 2.0 · Hellocation Korea
+            </p>
+
+            <p class="mt-4 max-w-3xl text-sm leading-7 text-[#20263A]/60">
+                Awarded a Certificate of Appreciation for active participation
+                in the Step Forward to Your International Academic Journey
+                program, gaining insights into Korean scholarship frameworks,
+                international academic preparation, and cross-cultural
+                higher education pathways.
+            </p>
+
+        </div>
+
+        <div class="lg:justify-self-end">
+            <button type="button" data-open-detail="seminar"
+                class="group inline-flex items-center gap-3 border-b border-[#3155D8]/30 pb-2 text-[10px] font-medium uppercase tracking-[0.16em] text-[#3155D8] transition-all duration-300 hover:gap-5 hover:border-[#8C3040] hover:text-[#8C3040]">
+                Explore Experience
+                <span class="text-sm">↗</span>
+            </button>
+        </div>
+
+    </div>
+
+</article>
+
+
+        <div id="experienceEmpty" class="hidden border-b border-[#20263A]/15 py-12 text-center">
+            <p class="text-sm text-[#20263A]/50">
+                No experiences found in this category.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+{{-- DETAIL VIEW --}}
+<section id="experienceDetail" class="hidden bg-[#F1F4FA] px-6 py-10 text-[#20263A] lg:px-8 lg:py-16">
+
+    <div class="mx-auto max-w-7xl">
+
+        {{-- BACK BUTTON --}}
+        <button
+            id="backToExperiences"
+            type="button"
+            class="group mb-10 inline-flex items-center gap-3 text-[10px] font-medium uppercase tracking-[0.18em] text-[#3155D8] transition-all hover:gap-5 hover:text-[#8C3040]"
+        >
+            <span class="text-base">←</span>
+            Back to Experiences
+        </button>
+
+
+        {{-- DETAIL HEADER --}}
+        <div class="border-b border-[#20263A]/15 pb-9">
+
+            <div class="flex flex-wrap items-center gap-3">
+
+                <span id="detailCategory"
+                    class="text-[10px] font-medium uppercase tracking-[0.22em] text-[#8C3040]">
+                </span>
+
+                <span class="h-3 w-px bg-[#20263A]/20"></span>
+
+                <span id="detailYear"
+                    class="text-[10px] uppercase tracking-[0.18em] text-[#20263A]/45">
+                </span>
+
+            </div>
+
+            <h1 id="detailTitle"
+                class="mt-5 max-w-5xl text-4xl font-semibold leading-[1.05] tracking-[-0.055em] sm:text-5xl lg:text-7xl">
+            </h1>
+
+            <p id="detailLocation"
+                class="mt-4 text-sm font-medium text-[#3155D8]">
+            </p>
+
+        </div>
+
+
+        {{-- OVERVIEW --}}
+        <div class="grid gap-8 border-b border-[#20263A]/15 py-10 lg:grid-cols-[0.65fr_1.35fr] lg:gap-16">
+
+            <div>
+                <p class="text-[10px] font-medium uppercase tracking-[0.25em] text-[#8C3040]">
+                    01 / Overview
+                </p>
+
+                <h2 class="mt-3 text-2xl font-medium tracking-[-0.04em]">
+                    The experience.
+                </h2>
+            </div>
+
+            <div>
+                <p id="detailOverview" class="text-sm leading-8 text-[#20263A]/65">
+                </p>
+            </div>
+
+        </div>
+
+
+        {{-- CONTRIBUTIONS --}}
+        <div class="grid gap-8 border-b border-[#20263A]/15 py-10 lg:grid-cols-[0.65fr_1.35fr] lg:gap-16">
+
+            <div>
+                <p class="text-[10px] font-medium uppercase tracking-[0.25em] text-[#8C3040]">
+                    02 / Contributions
+                </p>
+
+                <h2 class="mt-3 text-2xl font-medium tracking-[-0.04em]">
+                    What I was involved in.
+                </h2>
+            </div>
+
+            <div id="detailContributions" class="space-y-7">
+            </div>
+
+        </div>
+
+
+        {{-- GALLERY --}}
+        <div class="py-10">
+
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+
+                <div>
+                    <p class="text-[10px] font-medium uppercase tracking-[0.25em] text-[#8C3040]">
+                        03 / Documentation
+                    </p>
+
+                    <h2 class="mt-3 text-2xl font-medium tracking-[-0.04em]">
+                        Moments from the experience.
+                    </h2>
+                </div>
+
+                <p class="max-w-xs text-xs leading-6 text-[#20263A]/50">
+                    A visual record of activities and moments throughout the experience.
+                </p>
+
+            </div>
+
+            <div id="detailGallery" class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:gap-4">
+            </div>
+
+        </div>
+
+
+        {{-- IMAGE PREVIEW --}}
+        <div id="experienceImageModal"
+            class="fixed inset-0 z-[100] hidden items-center justify-center bg-[#20263A]/90 p-5 backdrop-blur-sm"
+            aria-hidden="true">
+
+            <button id="closeExperienceImage"
+                type="button"
+                aria-label="Close image preview"
+                class="absolute right-5 top-5 flex h-10 w-10 items-center justify-center border border-white/20 bg-white/10 text-xl text-white transition hover:bg-white/20">
+                ×
+            </button>
+
+            <img
+                id="experienceImagePreview"
+                src=""
+                alt="Experience documentation preview"
+                class="max-h-[85vh] max-w-full object-contain"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{{-- CLOSING --}}
+<section id="experienceClosing" class="bg-[#3155D8] px-6 py-14 text-[#FAF9F6] lg:px-8 lg:py-20">
+
+    <div class="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[1fr_1fr] lg:items-end">
+
+        <div>
+
+            <p class="text-[10px] uppercase tracking-[0.3em] text-[#F0A0AA]">
+                Beyond the Experience
+            </p>
+
+            <h2 class="mt-4 max-w-2xl text-4xl font-semibold leading-tight tracking-[-0.045em] sm:text-5xl lg:text-6xl">
+                Every experience
+                <span class="font-serif italic text-[#F0A0AA]">
+                    leaves a mark.
+                </span>
+            </h2>
+
+        </div>
+
+        <p class="max-w-md text-sm leading-8 text-[#FAF9F6]/70 lg:justify-self-end">
+            Every opportunity to learn, contribute, and collaborate
+            becomes part of a continuing journey of personal and
+            professional growth.
+        </p>
+
+    </div>
+
+</section>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const experienceHero = document.getElementById('experienceHero');
+    const experienceList = document.getElementById('experienceList');
+    const experienceDetail = document.getElementById('experienceDetail');
+    const experienceClosing = document.getElementById('experienceClosing');
+
+    const filterButtons = document.querySelectorAll('.experience-filter');
+    const experienceItems = document.querySelectorAll('.experience-item');
+    const emptyState = document.getElementById('experienceEmpty');
+
+    let activeFilter = 'all';
+
+
+    // EXPERIENCE DATA
+    const experiences = {
+
+        bmn: {
+
+            category: 'Internship',
+            year: '2024',
+            title: 'BMN Team Internship',
+            location: 'Rectorate, University of Palangka Raya',
+
+            overview: 'Completed a one-semester internship with the BMN team at the Rectorate of Universitas Palangka Raya, assisting with daily operational workflows and building an operational inventory application to streamline stock management and university item borrowing. Concluded the program with a system readiness presentation for deployment and a final internship defense.',
+
+            contributions: [
+
+                {
+                    title: 'Daily Operational Support',
+                    description: 'Assisted the BMN team with daily operational workflows during the internship period.'
+                },
+
+                {
+                    title: 'Inventory Application Development',
+                    description: 'Built an operational inventory application designed to streamline stock management and university item borrowing.'
+                },
+
+                {
+                    title: 'System Readiness Presentation',
+                    description: 'Presented the application and its readiness for deployment as part of the internship conclusion.'
+                },
+
+                {
+                    title: 'Final Internship Defense',
+                    description: 'Concluded the internship program with a final presentation and internship defense.'
+                }
+
+            ],
+
+            gallery: [
+                {
+                    image: "{{ asset('images/bmnteam1.png') }}",
+                    caption: 'Internship documentation'
+                },
+                {
+                    image: "{{ asset('images/bmnteam2.png') }}",
+                    caption: 'BMN Team activities'
+                },
+                {
+                    image: "{{ asset('images/bmnteam3.png') }}",
+                    caption: 'Internship activities'
+                },
+                {
+                    image: "{{ asset('images/bmnteam4.png') }}",
+                    caption: 'Internship documentation'
+                },
+                {
+                    image: "{{ asset('images/bmnteamlembarpenilaian.png') }}",
+                    caption: 'Internship assessment sheet'
+                }
+            ]
+
+        },
+
+
+        kkn: {
+
+            category: 'Community Service Program',
+            year: '2023',
+            title: 'Community Service Program (KKN)',
+            location: 'Tewah Pupuh Village, Banua Lima District, Central Kalimantan, Indonesia',
+
+            overview: 'Conducted a two-month Community Service Program (KKN) in a rural village within Banua Lima District, Kalimantan, located approximately 315 km from central Palangka Raya (a travel time of about 6 hours and 40 minutes). Working alongside village officials (the village head and village secretary), local residents, and fellow team members, the fieldwork combined educational outreach, digital evaluation, administrative support, and agricultural engagement.',
+
+            contributions: [
+
+                {
+                    title: 'Educational Outreach',
+                    description: 'Conducted weekday foundational teaching activities for kindergarten and elementary school students.'
+                },
+
+                {
+                    title: 'Digital Evaluation',
+                    description: 'Collaborated with the team to review and evaluate the Banua Lima District website to support village development across the district.'
+                },
+
+                {
+                    title: 'Administrative Support',
+                    description: 'Contributed to producing house identification number plates as part of local administrative support activities.'
+                },
+
+                {
+                    title: 'Agricultural Engagement',
+                    description: 'Assisted local farmers with planting rice and corn.'
+                },
+
+                {
+                    title: 'Community Collaboration',
+                    description: 'Worked alongside village officials, local residents, and fellow team members throughout the two-month fieldwork.'
+                }
+
+            ],
+
+            gallery: [
+                {
+                    image: "{{ asset('images/kkn1.png') }}",
+                    caption: 'Community service activities'
+                },
+                {
+                    image: "{{ asset('images/kkn2.png') }}",
+                    caption: 'KKN fieldwork documentation'
+                },
+                {
+                    image: "{{ asset('images/kkn3.png') }}",
+                    caption: 'Community engagement'
+                }
+            ]
+
+        },
+
+
+        volunteer: {
+
+            category: 'International Volunteering',
+            year: '2026',
+            title: 'International Volunteer & Interpreter',
+            location: 'Busan Team, South Korea',
+
+            overview: 'Participated in an international volunteering program alongside a team from Busan, South Korea, centering on spiritual fellowship and mutual cultural exchange. Served as an interpreter to bridge daily communication between the South Korean team and local participants, ensuring smooth coordination and effective cross-cultural engagement throughout the program. Through this role, I helped foster a welcoming and collaborative environment that strengthened interpersonal connections across both cultures.',
+
+            contributions: [
+
+                {
+                    title: 'Interpreter',
+                    description: 'Supported daily communication between the South Korean team and local participants by helping bridge language differences.'
+                },
+
+                {
+                    title: 'Communication & Coordination',
+                    description: 'Helped ensure smooth coordination and effective communication throughout the volunteering program.'
+                },
+
+                {
+                    title: 'Cross-Cultural Engagement',
+                    description: 'Supported mutual cultural exchange and helped foster a welcoming, collaborative environment between both groups.'
+                },
+
+                {
+                    title: 'Spiritual Fellowship',
+                    description: 'Participated in program activities centered on spiritual fellowship and interpersonal connections.'
+                }
+
+            ],
+
+            gallery: [
+                {
+                    image: "{{ asset('images/volunteer1.png') }}",
+                    caption: 'International volunteering'
+                },
+                {
+                    image: "{{ asset('images/volunteer2.png') }}",
+                    caption: 'Program documentation'
+                },
+                {
+                    image: "{{ asset('images/volunteer3.png') }}",
+                    caption: 'Team activities'
+                },
+                {
+                    image: "{{ asset('images/volunteer4.png') }}",
+                    caption: 'Cultural exchange'
+                },
+                {
+                    image: "{{ asset('images/volunteer5.png') }}",
+                    caption: 'Volunteering documentation'
+                }
+            ]
+
+        }
+
+        ,
+
+        korean: {
+
+            category: 'Korean Language Specialization',
+            year: '2026',
+            title: 'Korean Language Specialization',
+            location: 'Yonsei University × Coursera',
+
+            overview: 'Korean Language Specialization: First Step Korean & Learn to Speak Korean 1 (Yonsei University × Coursera). Documentation of active coursework and official Certificates of Completion awarded by Yonsei University. These structured online modules cultivated foundational proficiency in the Korean language, encompassing Hangul literacy, grammatical syntax, listening comprehension, and practical conversational fluency.',
+
+            contributions: [
+
+                {
+                    title: 'First Step Korean',
+                    description: 'Completed foundational coursework introducing the Korean language and its basic communication elements.'
+                },
+
+                {
+                    title: 'Learn to Speak Korean 1',
+                    description: 'Completed a structured learning module focused on developing practical Korean speaking and conversational abilities.'
+                },
+
+                {
+                    title: 'Hangul Literacy',
+                    description: 'Developed foundational familiarity with the Korean writing system and Hangul literacy.'
+                },
+
+                {
+                    title: 'Grammar & Listening Comprehension',
+                    description: 'Studied grammatical syntax and developed foundational listening comprehension through the online coursework.'
+                },
+
+                {
+                    title: 'Certificates of Completion',
+                    description: 'Earned official Certificates of Completion awarded by Yonsei University for the completed courses.'
+                }
+
+            ],
+
+            gallery: [
+                {
+                    image: "{{ asset('images/coursera1.png') }}",
+                    caption: 'Korean language coursework',
+                    fit: 'contain'
+                },
+                {
+                    image: "{{ asset('images/coursera2.png') }}",
+                    caption: 'First Step Korean',
+                    fit: 'contain'
+                },
+                {
+                    image: "{{ asset('images/coursera3.png') }}",
+                    caption: 'Learn to Speak Korean 1',
+                    fit: 'contain'
+                },
+                {
+                    image: "{{ asset('images/coursera4.png') }}",
+                    caption: 'Certificate documentation',
+                    fit: 'contain'
+                }
+            ]
+
+        },
+
+
+        seminar: {
+
+            category: 'International Academic Seminar',
+            year: '2026',
+            title: 'International Academic Preparation Seminar',
+            location: 'Korea Path to Scholarship (K-PASS) 2.0 · Hellocation Korea',
+
+            overview: 'Awarded for active participation in the Step Forward to Your International Academic Journey program hosted by Hellocation Korea on September 6, 2026. This seminar provided comprehensive insights into Korean scholarship frameworks, international academic preparation, and cross-cultural higher education pathways.',
+
+            contributions: [
+
+                {
+                    title: 'Active Participation',
+                    description: 'Participated in the Step Forward to Your International Academic Journey program hosted by Hellocation Korea.'
+                },
+
+                {
+                    title: 'Korean Scholarship Frameworks',
+                    description: 'Gained insights into scholarship frameworks and opportunities related to pursuing higher education in South Korea.'
+                },
+
+                {
+                    title: 'International Academic Preparation',
+                    description: 'Explored preparation considerations and pathways for pursuing international academic opportunities.'
+                },
+
+                {
+                    title: 'Cross-Cultural Higher Education',
+                    description: 'Learned about cross-cultural aspects of international higher education pathways.'
+                },
+
+                {
+                    title: 'Certificate of Appreciation',
+                    description: 'Received a Certificate of Appreciation in recognition of active participation in the program.'
+                }
+
+            ],
+
+            gallery: [
+                {
+                    image: "{{ asset('images/seminar.png') }}",
+                    caption: 'Certificate of Appreciation',
+                    fit: 'contain'
+                }
+            ]
+
+        }
+
+    };
+
+
+    // FILTER
+    filterButtons.forEach(function (button) {
+
+        button.addEventListener('click', function () {
+
+            activeFilter = this.dataset.filter;
+
+            filterButtons.forEach(function (item) {
+
+                item.classList.remove(
+                    'bg-[#3155D8]',
+                    'text-white',
+                    'border-[#3155D8]'
+                );
+
+                item.classList.add(
+                    'text-[#20263A]/55',
+                    'border-[#20263A]/15'
+                );
+
+            });
+
+            this.classList.add(
+                'bg-[#3155D8]',
+                'text-white',
+                'border-[#3155D8]'
+            );
+
+            this.classList.remove(
+                'text-[#20263A]/55',
+                'border-[#20263A]/15'
+            );
+
+            let visibleCount = 0;
+
+            experienceItems.forEach(function (item) {
+
+                const shouldShow =
+                    activeFilter === 'all' ||
+                    item.dataset.category === activeFilter;
+
+                item.classList.toggle('hidden', !shouldShow);
+
+                if (shouldShow) visibleCount++;
+
+            });
+
+            emptyState.classList.toggle('hidden', visibleCount > 0);
+
+        });
+
+    });
+
+
+    // OPEN DETAIL
+    function openExperienceDetail(key) {
+
+        const experience = experiences[key];
+
+        if (!experience) return;
+
+        document.getElementById('detailCategory').textContent = experience.category;
+        document.getElementById('detailYear').textContent = experience.year;
+        document.getElementById('detailTitle').textContent = experience.title;
+        document.getElementById('detailLocation').textContent = experience.location;
+        document.getElementById('detailOverview').textContent = experience.overview;
+
+
+        // CONTRIBUTIONS
+        const contributionContainer =
+            document.getElementById('detailContributions');
+
+        contributionContainer.innerHTML = '';
+
+        experience.contributions.forEach(function (item, index) {
+
+            const contribution = document.createElement('div');
+
+            contribution.className =
+                'grid gap-2 sm:grid-cols-[42px_1fr] sm:gap-4';
+
+            contribution.innerHTML = `
+                <span class="font-mono text-[10px] text-[#8C3040]">
+                    ${String(index + 1).padStart(2, '0')}
+                </span>
+
+                <div>
+                    <h3 class="text-base font-medium text-[#20263A]">
+                        ${item.title}
+                    </h3>
+
+                    <p class="mt-2 text-sm leading-7 text-[#20263A]/60">
+                        ${item.description}
+                    </p>
+                </div>
+            `;
+
+            contributionContainer.appendChild(contribution);
+
+        });
+
+
+        // GALLERY
+        const galleryContainer =
+            document.getElementById('detailGallery');
+
+        galleryContainer.innerHTML = '';
+
+        experience.gallery.forEach(function (item) {
+const imageFit =
+    item.fit === 'contain'
+        ? 'object-contain p-3'
+        : 'object-cover';
+            const galleryItem = document.createElement('button');
+
+            galleryItem.type = 'button';
+
+            galleryItem.className =
+                'group overflow-hidden bg-white text-left';
+
+            galleryItem.innerHTML = `
+                <div class="aspect-[4/3] overflow-hidden bg-[#E5E9F1]">
+                    <img
+                        src="${item.image}"
+                        alt="${item.caption}"
+class="h-full w-full ${imageFit} transition duration-500 group-hover:scale-[1.04]"                        loading="lazy"
+                    >
+                </div>
+
+                <div class="flex min-h-[48px] items-center justify-between gap-2 px-3 py-3">
+                    <span class="text-[9px] uppercase tracking-[0.12em] text-[#20263A]/50">
+                        ${item.caption}
+                    </span>
+
+                    <span class="shrink-0 text-xs text-[#3155D8]">
+                        ↗
+                    </span>
+                </div>
+            `;
+
+            galleryItem.addEventListener('click', function () {
+                openImagePreview(item.image, item.caption);
+            });
+
+            galleryContainer.appendChild(galleryItem);
+
+        });
+
+
+        // SWITCH VIEW
+        experienceHero.classList.add('hidden');
+        experienceList.classList.add('hidden');
+        experienceClosing.classList.add('hidden');
+
+        experienceDetail.classList.remove('hidden');
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
+    }
+
+
+    // BACK TO LIST
+    document.getElementById('backToExperiences')
+        .addEventListener('click', function () {
+
+            experienceDetail.classList.add('hidden');
+
+            experienceHero.classList.remove('hidden');
+            experienceList.classList.remove('hidden');
+            experienceClosing.classList.remove('hidden');
+
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+
+        });
+
+
+    // OPEN BUTTONS
+    document.querySelectorAll('[data-open-detail]').forEach(function (button) {
+
+        button.addEventListener('click', function () {
+            openExperienceDetail(this.dataset.openDetail);
+        });
+
+    });
+
+
+    // IMAGE PREVIEW
+    const imageModal =
+        document.getElementById('experienceImageModal');
+
+    const imagePreview =
+        document.getElementById('experienceImagePreview');
+
+    function openImagePreview(image, caption) {
+
+        imagePreview.src = image;
+        imagePreview.alt = caption;
+
+        imageModal.classList.remove('hidden');
+        imageModal.classList.add('flex');
+
+        imageModal.setAttribute('aria-hidden', 'false');
+
+        document.body.classList.add('overflow-hidden');
+
+    }
+
+    function closeImagePreview() {
+
+        imageModal.classList.add('hidden');
+        imageModal.classList.remove('flex');
+
+        imageModal.setAttribute('aria-hidden', 'true');
+
+        imagePreview.src = '';
+
+        document.body.classList.remove('overflow-hidden');
+
+    }
+
+    document.getElementById('closeExperienceImage')
+        .addEventListener('click', closeImagePreview);
+
+    imageModal.addEventListener('click', function (event) {
+
+        if (event.target === imageModal) {
+            closeImagePreview();
+        }
+
+    });
+
+    document.addEventListener('keydown', function (event) {
+
+        if (
+            event.key === 'Escape' &&
+            !imageModal.classList.contains('hidden')
+        ) {
+            closeImagePreview();
+        }
+
+    });
+
+});
+
+</script>
+
+@endsection
